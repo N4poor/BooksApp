@@ -36,7 +36,11 @@ class BooksList {
       const ratingWidth = Math.floor(book.rating * 10) + '%';
 
       const bookData = {
-        ...book,
+        id: book.id,
+        name: book.name,
+        price: book.price,
+        image: book.image,
+        rating: book.rating,
         ratingBgc,
         ratingWidth,
       };
@@ -113,4 +117,4 @@ class BooksList {
   }
 }
 
-const app = new BooksList();
+new BooksList();

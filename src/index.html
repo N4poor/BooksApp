@@ -36,7 +36,7 @@
 
   <!-- BOOK TEMPLATE -->
   <script id="template-book" type="text/x-handlebars-template">
-    <li class="book">
+    <li class="book" data-id="{{ id }}">
 
       <!-- title and price -->
       <header class="book__header">
@@ -45,7 +45,7 @@
       </header>
 
       <!-- cover image -->
-      <a href="#" class="book__image" data-id="{{ id }}">
+      <a href="#" class="book__image" data-id="{{id}}">
         <figure>
           <img src="{{ image }}" alt="{{ name }}">
         </figure>
@@ -57,8 +57,6 @@
           {{ rating }}/10
         </div>
       </div>
-
-
     </li>
   </script>
 
@@ -67,4 +65,4 @@
   <script src="js/data.js"></script>
   <script src="js/script.js"></script>
 </body>
-</html> 
+</html>
